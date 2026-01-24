@@ -1,0 +1,19 @@
+.arrow {
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour_container {
+    width: 84.375vw;
+    max-width: 1080px;
+    margin: 0 auto;
+
+}
+
+
+.View_all {
+    color: orange;
+}
