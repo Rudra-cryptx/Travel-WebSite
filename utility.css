@@ -37,3 +37,9 @@ justify-center{
 .gap-15{
     gap: 10px;
 }
+.border-red{
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    padding: 60px;
+}

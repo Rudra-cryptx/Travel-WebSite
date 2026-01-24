@@ -17,3 +17,115 @@
 .View_all {
     color: orange;
 }
+
+.tour_package_and_places{
+    border: 1px solid red;
+    height: 500px;
+    
+}
+.tour_place{
+    
+    border: 1px solid blue;
+    height: 445px;
+    display: flex;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+}
+.tour_place_card_img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.tour_place_card{
+    padding: 5px;
+    border: 1px solid green;
+    min-height: 350px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.tour_place_card img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.travel_rating_rating_in_proper_order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px; 
+    gap: 20px   ;
+}
+.travel_details_things{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin: 4px;
+    padding: 4px;
+}
+.travel_rating_things{
+    display: flex;
+}
+.travel_rating_things img{
+    height: 15px;
+    width: 15px;
+}
+.travel_para_detail{
+    padding: 4px;margin: 4px;
+}
+.travel_amoutnoff{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 4px;
+    padding: 4px;
+}
+.travel_nooff{
+    text-decoration: line-through;
+}
+.svageupto{
+    color: #f37002;
+    background-color: #e5f2e8;
+}
+.totalamouttopay{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.amouuttopay{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 4px;
+    padding: 4px;
+}
+.peradult{
+    color: #f37002;
+    margin: 4px;
+    padding: 4px;
+}
+.travel_btn_card{
+    display: flex;
+    gap: 12px;
+}
+.phone_logo{
+    border: orange 1px solid;
+    padding: 12px;
+    border-radius: 8px;
+}
+.contact_us{
+    background-color: #f37002;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+}
