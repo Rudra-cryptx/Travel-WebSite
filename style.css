@@ -58,7 +58,7 @@ tour_package_and_places::-webkit-scrollbar {
 }
 
 .tour_place_card img {
-    height: auto;
+    height: 200px;
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
@@ -153,4 +153,12 @@ tour_package_and_places::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     width: 255px;
+}
+.divider_seperate{
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    min-height: 1px;
+    min-width: 1080px;
+    background: linear-gradient(270deg, hsla(0, 0%, 100%, .05) -.13%, hsla(0, 0%, 88%, .05) 0, #e0e0e0 49.17%, hsla(0, 0%, 88%, .05));
 }
