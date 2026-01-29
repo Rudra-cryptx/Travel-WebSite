@@ -1,3 +1,58 @@
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    padding-bottom: 27px;
+    
+}
+
+
+
+.searchsearchbar input{
+    border: none;
+}
+.searchsearchbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: gray 1px solid;
+    border-radius: 20px;
+}
+.currancy_login{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.login button{
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #f37002;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .arrow {
     background-color: orange;
     border-radius: 50%;
