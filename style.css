@@ -3,14 +3,27 @@
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    padding-bottom: 27px;
-    
+    padding-bottom: 15px;
+    border-bottom: #e0e0e0 1px solid;
 }
 
+.searchsearchbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 0px 20px 0px gray;  
+}
 
+.searchsearchbar:hover{
+    
+    transition: all 0.3s ease-in-out;
+}
 
 .searchsearchbar input{
     border: none;
+    outline: none;
+    width: 100%;
 }
 .searchsearchbar{
     display: flex;
@@ -19,6 +32,7 @@
     padding: 10px;
     border: gray 1px solid;
     border-radius: 20px;
+    gap: 10px;
 }
 .currancy_login{
     display: flex;
@@ -30,7 +44,7 @@
     padding: 8px 16px;
     border-radius: 6px;
     background-color: #f37002;
-
+    cursor: pointer;
 }
 
 
