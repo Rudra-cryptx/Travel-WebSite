@@ -1,3 +1,6 @@
+.nav_hero{
+    display: flex;
+}
 .searchbar{
     display: flex;
     align-items: center;
@@ -24,6 +27,7 @@
     border: none;
     outline: none;
     width: 100%;
+    
 }
 .searchsearchbar{
     display: flex;
