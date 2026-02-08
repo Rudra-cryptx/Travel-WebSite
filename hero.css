@@ -1,0 +1,9 @@
+.nav_hero{
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.heroright{
+    position: relative;
+    right: 0px;
+    bottom: -30px;
+}
