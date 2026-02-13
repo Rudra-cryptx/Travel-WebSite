@@ -1,0 +1,12 @@
+.tour_nav_bar{
+    justify-content: center;
+    display: flex;
+}
+
+.tour_nav_bar_contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px
+    ;
+}
