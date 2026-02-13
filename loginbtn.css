@@ -1,0 +1,44 @@
+/* Blur effect */
+.blur_effect {
+    filter: blur(0px);
+}
+
+/* Modal overlay */
+.login_modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Modal box */
+.login_box {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    animation: pop 0.3s ease;
+}
+
+/* Close button */
+.close_btn {
+    position: absolute; 
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Animation */
+@keyframes pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
