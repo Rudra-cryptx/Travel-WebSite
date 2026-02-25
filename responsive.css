@@ -1,0 +1,18 @@
+@media (max-width: 576px){
+    .heroleft{
+        display: none;
+    }
+    .heroright{
+        display: none;
+    }
+    .tour_nav_bar_contents{
+        flex-wrap: wrap;
+    }
+    .heroheading{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}

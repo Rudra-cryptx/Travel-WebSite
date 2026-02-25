@@ -235,3 +235,7 @@ tour_package_and_places::-webkit-scrollbar {
     min-width: 1080px;
     background: linear-gradient(270deg, hsla(0, 0%, 100%, .05) -.13%, hsla(0, 0%, 88%, .05) 0, #e0e0e0 49.17%, hsla(0, 0%, 88%, .05));
 }
+.divider_seperate{
+    width: 100%;
+    min-width: 0;
+}
