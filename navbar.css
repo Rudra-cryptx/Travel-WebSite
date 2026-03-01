@@ -1,12 +1,51 @@
-.tour_nav_bar{
+/* -----------------------*/
+/* Tour NavBar Category Section */
+/* -----------------------*/
+
+.tour_nav_bar {
     justify-content: center;
     display: flex;
+    margin: 50px 0;
+    padding: 0 20px;
 }
 
-.tour_nav_bar_contents{
+.tour_nav_bar_contents {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 20px
-    ;
+    gap: 30px;
+    /* background: var(--card-bg); */
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    flex-wrap: wrap;
+    /* ensuring responsive safety */
+}
+
+.tour_nav_bar_contents>div {
+    transition: var(--transition);
+    cursor: pointer;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+    /* subtle shadow around each category item initially */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tour_nav_bar_contents img {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.tour_nav_bar_contents>div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgb(5, 5, 5 , 0.4);
+}
+
+.tour_nav_bar_contents>div:hover img {
+    transform: scale(1.02);
 }
