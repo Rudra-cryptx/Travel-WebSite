@@ -14,13 +14,13 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 30px;
-    /* background: var(--card-bg); */
+    background: var(--card-bg);
     padding: 20px 40px;
     border-radius: 20px;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
     flex-wrap: wrap;
-    /* ensuring responsive safety */
+    /
 }
 
 .tour_nav_bar_contents>div {
@@ -29,7 +29,6 @@
     border-radius: var(--radius-md);
     overflow: hidden;
     position: relative;
-    /* subtle shadow around each category item initially */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
