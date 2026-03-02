@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahakal TOURS login page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="Login portal for JourneyEase Travel Agency partners and agents.">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="login_page_container">
+        <div class="login_page_box">
+            <div class="login_page_header">
+                <h2>Wellcome Back</h2>
+                <p>Your next grand adventure awaits</p>
+                
+            </div>
+            <form id="loginform" class="login-form">
+                <div class="input-group">
+                    <i class='bx bx-envelope icon'></i>
+                    <input type="email" id="email" placeholder=" " autocomplete="off" required>
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="input-group">
+                    <i class='bx bx-lock-alt icon'></i>
+                    <input type="password" id="password" placeholder=" " required>
+                    <label for="password">Password</label>
+                    <i class='bx bx-hide toggle-password' id="togglePassword"></i>
+                </div>
+                <div class="form-actions">
+                    <lable class="remember-me">
+                        <input type="checkbox"  id="remember">
+                        <span class="checkmark"></span>
+                        Remember Me
+                    </lable>
+                    <a href="#" class="forgote-link">Forgote Password?</a>
+
+                </div>
+                <button type="submit" class="btn-login">
+                    <span>Sign In</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </button>
+            </form>
+            <div class="login-footer">
+                <p>Don't have an agency account? <a href="#">Apply now</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
