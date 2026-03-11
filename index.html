@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="tourcard.css">
-    
+
 </head>
 
 <body>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="searchbarinput">
 
-                    <input type="text" placeholder="Search for destination, tour, activity">
+                    <input type="text" id="searchbarinput" placeholder="Search for destination, tour, activity">
                 </div>
             </div>
             <div class="currancy_login flex align-center ">
@@ -159,7 +159,8 @@
             </div>
             <div class="tour_package_and_places ">
                 <div class="tour_place ">
-                    <div class="tour_place_card ">
+                    <div class="tour_place_card" onclick="location.href='package-details.html'"
+                        style="cursor: pointer;">
                         <div class="tour_place_card_img">
                             <img src="IMAGES/Demo.avif" alt="">
                         </div>
@@ -566,6 +567,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="searchbar.js"></script>
 </body>
 
 </html>
