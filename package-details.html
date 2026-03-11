@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Details | Makahal Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="loginbtn.css">
+    <link rel="stylesheet" href="package-details.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="hero_navbar" style="height: auto; min-height: unset; padding-bottom: 20px;">
+        <div class="searchbar">
+            <div class="logo flex">
+                <a href="index.html">
+                    <div class="logoimg">
+                        <img style="width: 40px;" src="IMAGES/2BG.jpg" alt="Logo">
+                    </div>
+                </a>
+            </div>
+            <div class="searchsearchbar">
+                <div class="searchlogo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 16 16"
+                        role="img">
+                        <path stroke="#515151" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"
+                            d="M7.333 12.667A5.333 5.333 0 107.333 2a5.333 5.333 0 000 10.667zM14 14l-2.9-2.9"></path>
+                    </svg>
+                </div>
+                <div class="searchbarinput">
+                    <input type="text" id="searchbarinput" placeholder="Search for destination, tour, activity">
+                </div>
+            </div>
+            <div class="currancy_login flex align-center ">
+                <div class="currancy">
+                    <div class="currcontrylogo">
+                        INR
+                        ₹
+                    </div>
+                </div>
+                <div class="loginbtn">
+                    <div class="login">
+                        <a href="login.html">
+                            <button id="loginBtn">Login</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Package Detail Section -->
+    <main class="package-main">
+        <!-- Hero Section for the Package -->
+        <section class="package-hero">
+            <img src="IMAGES/Demo.avif" alt="Vietnam Couple Exclusive" class="package-hero-img">
+            <div class="package-hero-overlay">
+                <div class="package-hero-content tour_container">
+                    <div class="badges">
+                        <span class="badge">Couple Exclusive</span>
+                        <span class="badge">Bestseller</span>
+                    </div>
+                    <h1>Vietnam Couple EXCLUSIVE | FREE Candle Light Dinner</h1>
+                    <div class="package-meta flex align-center gap-15">
+                        <div class="flex align-center gap-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-clock">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>7 Days & 6 Nights</span>
+                        </div>
+                        <div class="travel_rating_things" style="color: white;">
+                            <img src="IMAGES/star.svg" alt="star" style="filter: brightness(0) invert(1);">
+                            <span class="travel_rating">4.8</span>
+                            <span class="light-text" style="color: #e2e8f0;">(543 Reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="tour_container package-content-wrapper flex">
+            <!-- Left Column: Details & Itinerary -->
+            <div class="package-left">
+                <!-- Overview Tabs / Quick Info -->
+                <section class="overview-section">
+                    <h2>Tour Overview</h2>
+                    <p>Experience the magic of Vietnam with this exclusive couple's package. Journey through bustling
+                        cities, serene bays, and lush landscapes. Includes romantic experiences designed specifically to
+                        create unforgettable memories together.</p>
+
+                    <div class="quick-facts grid">
+                        <div class="fact-item">
+                            <div class="fact-icon">✈️</div>
+                            <div>
+                                <strong>Flights</strong>
+                                <span>Included (Round Trip)</span>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <div class="fact-icon">🏨</div>
+                            <div>
+                                <strong>Hotels</strong>
+                                <span>4-Star Accommodation</span>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <div class="fact-icon">🚗</div>
+                            <div>
+                                <strong>Transfers</strong>
+                                <span>Private A/C Vehicle</span>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <div class="fact-icon">🍽️</div>
+                            <div>
+                                <strong>Meals</strong>
+                                <span>Breakfast & 2 Dinners</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="section-divider">
+
+                <!-- Day-wise Itinerary -->
+                <section class="itinerary-section">
+                    <h2>Day-wise Itinerary</h2>
+                    <div class="itinerary-accordion" id="itineraryAccordion">
+
+                        <!-- Day 1 -->
+                        <div class="accordion-item active">
+                            <button class="accordion-header" aria-expanded="true">
+                                <span class="day-badge">Day 1</span>
+                                <span class="day-title">Arrival in Hanoi & Welcome Dinner</span>
+                                <span class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg></span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Welcome to Hanoi, the capital of Vietnam! Upon arrival at Noi Bai International
+                                        Airport, our representative will greet you and transfer you to your hotel for
+                                        check-in.</p>
+                                    <p>Take some time to relax after your flight. In the evening, enjoy a special
+                                        welcome candle-light dinner at a premium local restaurant.</p>
+                                    <ul class="itinerary-highlights">
+                                        <li>Private airport transfer</li>
+                                        <li>Hotel check-in (Premium Room)</li>
+                                        <li>Exclusive candle-light welcome dinner</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 2 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="day-badge">Day 2</span>
+                                <span class="day-title">Hanoi City Tour & Water Puppet Show</span>
+                                <span class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg></span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>After breakfast, begin your exploration of this fascinating city. Visit the Ho
+                                        Chi Minh Complex, including the Mausoleum and his stilt house.</p>
+                                    <p>Continue to the One Pillar Pagoda and the Temple of Literature, Vietnam's first
+                                        university. In the afternoon, explore the Old Quarter by cyclo and end the day
+                                        with a traditional Water Puppet Show.</p>
+                                    <ul class="itinerary-highlights">
+                                        <li>Guided Hanoi City Tour</li>
+                                        <li>Cyclo ride through the Old Quarter</li>
+                                        <li>Tickets to the Water Puppet Show</li>
+                                        <li>Breakfast included</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 3 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="day-badge">Day 3</span>
+                                <span class="day-title">Ha Long Bay Cruise (Overnight)</span>
+                                <span class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg></span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Leave Hanoi behind as you travel to the spectacular Ha Long Bay, a UNESCO World
+                                        Heritage site. Board your traditional wooden junk boat for an overnight cruise
+                                        through the limestone karsts.</p>
+                                    <p>Enjoy a fresh seafood lunch on board, visit stunning caves, go kayaking or
+                                        swimming, and watch the sunset over the bay.</p>
+                                    <ul class="itinerary-highlights">
+                                        <li>Scenic drive to Ha Long Bay</li>
+                                        <li>Overnight cruise on a luxury junk boat</li>
+                                        <li>Kayaking & cave exploration</li>
+                                        <li>All meals included on board</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 4 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="day-badge">Day 4</span>
+                                <span class="day-title">Ha Long Bay to Da Nang & Hoi An</span>
+                                <span class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg></span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Wake up early for a Tai Chi session on the sundeck. Continue cruising and
+                                        exploring before disembarking and returning to Hanoi for your flight to Da Nang.
+                                    </p>
+                                    <p>Upon arrival in Da Nang, transfer to the charming ancient town of Hoi An for
+                                        check-in.</p>
+                                    <ul class="itinerary-highlights">
+                                        <li>Morning Tai Chi on board</li>
+                                        <li>Domestic flight to Da Nang</li>
+                                        <li>Transfer to Hoi An hotel</li>
+                                        <li>Breakfast & Brunch included</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 5 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="day-badge">Day 5</span>
+                                <span class="day-title">Hoi An Ancient Town & Lantern Making</span>
+                                <span class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg></span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Spend the morning on a walking tour of Hoi An Ancient Town, famous for its
+                                        well-preserved architecture, pedestrian-only streets, and the iconic Japanese
+                                        Covered Bridge.</p>
+                                    <p>In the afternoon, participate in a traditional lantern-making class together, a
+                                        perfect souvenir for couples.</p>
+                                    <ul class="itinerary-highlights">
+                                        <li>Guided walking tour of Hoi An</li>
+                                        <li>Japanese Covered Bridge visit</li>
+                                        <li>Couples lantern-making workshop</li>
+                                        <li>Breakfast included</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 6 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="day-badge">Day 6</span>
+                                <span class="day-title">Ba Na Hills & Golden Bridge</span>
+                                <span class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg></span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Take a scenic drive back to Da Nang and ride the cable car up to Ba Na Hills.
+                                        Walk across the famous spectacular Golden Bridge held up by giant stone hands.
+                                    </p>
+                                    <p>Enjoy the French Village and Fantasy Park before heading back to your hotel in Da
+                                        Nang for your final night.</p>
+                                    <ul class="itinerary-highlights">
+                                        <li>Ba Na Hills cable car ride</li>
+                                        <li>Visit to the iconic Golden Bridge</li>
+                                        <li>Exploration of the French Village</li>
+                                        <li>Breakfast included</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 7 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span class="day-badge">Day 7</span>
+                                <span class="day-title">Departure from Da Nang</span>
+                                <span class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg></span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Enjoy your final breakfast in Vietnam. Depending on your flight schedule, you may
+                                        have some free time for last-minute shopping or beach relaxation before
+                                        transferring to the airport for your onward journey.</p>
+                                    <ul class="itinerary-highlights">
+                                        <li>Private airport transfer</li>
+                                        <li>Breakfast included</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <hr class="section-divider">
+
+                <!-- Inclusions / Exclusions -->
+                <section class="inclusions-section">
+                    <div class="flex gap-20 inclu_not" style="flex-wrap: wrap;">
+                        <div class="inclusions-box included">
+                            <h3>What's Included ✅</h3>
+                            <ul>
+                                <li>Accommodation in 4-Star hotels</li>
+                                <li>Daily breakfast as per itinerary</li>
+                                <li>All internal transfers (Private A/C Vehicle)</li>
+                                <li>Domestic flight tickets (Hanoi to Da Nang)</li>
+                                <li>English-speaking local guides</li>
+                                <li>Entrance fees for all mentioned attractions</li>
+                                <li>Overnight cruise on Ha Long Bay</li>
+                                <li>Special Candle-light dinner</li>
+                            </ul>
+                        </div>
+                        <div class="inclusions-box excluded">
+                            <h3>What's Excluded ❌</h3>
+                            <ul>
+                                <li>International flight tickets</li>
+                                <li>Visa fees for Vietnam</li>
+                                <li>Meals not specified in the itinerary</li>
+                                <li>Personal expenses (laundry, phone calls)</li>
+                                <li>Tips and gratuities for guides & drivers</li>
+                                <li>Travel insurance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Pricing & Booking -->
+            <div class="package-right">
+                <div class="booking-card sticky">
+                    <div class="price-header">
+                        <div class="travel_amoutnoff">
+                            <span class="travel_nooff light-text">INR 25,999</span>
+                            <span class="svageupto">Save INR 10,000</span>
+                        </div>
+                        <div class="totalamouttopay">
+                            <span class="amouuttopay" style="font-size: 32px;">INR 15,999</span>
+                            <span class="peradult">/Adult</span>
+                        </div>
+                        <p class="taxes-text light-text" style="font-size: 13px;">*Prices are inclusive of all taxes</p>
+                    </div>
+
+                    <div class="booking-form">
+                        <h3>Book this package</h3>
+                        <div class="input-group">
+                            <label>Travel Date</label>
+                            <input type="date" class="form-input">
+                        </div>
+                        <div class="input-group flex gap-10">
+                            <div style="flex: 1;">
+                                <label>Adults</label>
+                                <select class="form-input">
+                                    <option>2 Adults</option>
+                                    <option>3 Adults</option>
+                                    <option>4 Adults</option>
+                                </select>
+                            </div>
+                            <div style="flex: 1;">
+                                <label>Children</label>
+                                <select class="form-input">
+                                    <option>0 Children</option>
+                                    <option>1 Child</option>
+                                    <option>2 Children</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary full-width"
+                            style="margin-top: 15px; padding: 14px; font-size: 16px; font-weight: 600; border:none; border-radius: 8px; background-color: var(--primary-color); color: white; cursor: pointer;">Request
+                            Callback</button>
+                        <button class="btn-outline full-width"
+                            style="margin-top: 10px; padding: 14px; font-size: 16px; font-weight: 600; border: 1px solid var(--primary-color); border-radius: 8px; background-color: transparent; color: var(--primary-color); cursor: pointer;">Download
+                            Itinerary</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" style="margin-top: 60px;">
+        <div class="footer-content">
+            <div class="footer-section brand">
+                <img style="width: 40px; border-radius: 50%;" src="IMAGES/2BG.jpg" alt="Logo" class="footer-logo">
+                <p>Makahal Tours provides you with the best travel experiences across the globe. We believe in creating
+                    unforgettable memories.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@makahaltours.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <div class="social-icons">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Makahal Tours. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="package-details.js"></script>
+</body>
+
+</html>
