@@ -1,18 +1,72 @@
-@media (max-width: 576px){
-    .heroleft{
+/* Responsive styling for premium components */
+
+@media (max-width: 992px) {
+
+    .heroleft,
+    .heroright {
         display: none;
     }
-    .heroright{
-        display: none;
+
+    .searchsearchbar {
+        width: 100%;
+        max-width: 320px;
     }
-    .tour_nav_bar_contents{
-        flex-wrap: wrap;
-    }
-    .heroheading{
-        display: flex;
-        align-items: center;
+}
+
+@media (max-width: 768px) {
+    .searchbar {
         flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .searchsearchbar {
+        max-width: 100%;
+    }
+
+    .heroheading h2 {
+        font-size: 40px;
+    }
+
+    .heroheadingparagraph p {
+        font-size: 18px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-section.brand p {
+        padding-right: 0;
+    }
+
+    .social-icons {
         justify-content: center;
     }
-    
+}
+
+@media (max-width: 576px) {
+    .tour_place_card {
+        width: 280px;
+    }
+
+    .heroheading h2 {
+        font-size: 32px;
+    }
+
+    .currancy_login {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .tour_nav_bar_contents {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav_hero {
+        padding: 40px 0 20px;
+    }
 }
