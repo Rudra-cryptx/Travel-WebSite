@@ -1,15 +1,35 @@
 /* Responsive styling for premium components */
 
 @media (max-width: 992px) {
-
-    .heroleft,
-    .heroright {
-        display: none;
-    }
-
     .searchsearchbar {
         width: 100%;
         max-width: 320px;
+    }
+
+    /* New Hero Responsiveness */
+    .hero-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .hero-text-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-title {
+        font-size: 42px;
+    }
+    .hero-stats {
+        justify-content: center;
+    }
+    .hero-image-grid {
+        height: 400px;
+        width: 100%;
+        max-width: 500px;
+    }
+    .hero-img-box {
+        max-width: 100%;
     }
 }
 
@@ -24,12 +44,22 @@
         max-width: 100%;
     }
 
-    .heroheading h2 {
-        font-size: 40px;
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .hero-btn {
+        width: 100%;
     }
 
-    .heroheadingparagraph p {
-        font-size: 18px;
+    .hero-img-box {
+        height: 360px;
     }
 
     .footer-content {
@@ -52,10 +82,6 @@
         width: 280px;
     }
 
-    .heroheading h2 {
-        font-size: 32px;
-    }
-
     .currancy_login {
         width: 100%;
         justify-content: space-between;
@@ -68,5 +94,25 @@
 
     .nav_hero {
         padding: 40px 0 20px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 15px;
+        border-top: none;
+        padding-top: 20px;
+    }
+    
+    .stat-divider {
+        width: 100px;
+        height: 1px;
+    }
+    
+    .hero-image-grid {
+        display: none; /* Hide images on very small screens to focus on CTA */
     }
 }

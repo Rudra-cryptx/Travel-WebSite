@@ -8,7 +8,39 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background: radial-gradient(circle at top right, rgba(46, 196, 182, 0.05), transparent 40%);
+    position: relative;
+    background: var(--bg-color);
+}
+
+.nav_hero::before,
+.nav_hero::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: 1;
+    opacity: 0.6;
+    animation: drift 15s infinite alternate ease-in-out;
+}
+
+.nav_hero::before {
+    background: rgba(243, 112, 2, 0.3);
+    top: -100px;
+    left: -100px;
+}
+
+.nav_hero::after {
+    background: rgba(46, 196, 182, 0.2);
+    bottom: -100px;
+    right: -100px;
+    animation-delay: -5s;
+}
+
+@keyframes drift {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(50px, 80px) scale(1.1); }
 }
 
 .hero-content-wrapper {
@@ -18,6 +50,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 60px;
+    position: relative;
+    z-index: 2;
 }
 
 /* Text Container */
@@ -37,22 +71,20 @@
 }
 
 .hero-title .highlight {
-    color: var(--primary-color);
+    background: linear-gradient(90deg, var(--primary-color), #ff4b2b, var(--primary-color));
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 3s linear infinite;
     position: relative;
     display: inline-block;
 }
 
-.hero-title .highlight::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 30%;
-    bottom: 5px;
-    left: 0;
-    background-color: var(--primary-color);
-    opacity: 0.15;
-    z-index: -1;
-    border-radius: 4px;
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .hero-subtitle {
@@ -155,6 +187,13 @@
     width: 100%;
     max-width: 480px;
     height: 100%;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
 }
 
 .hero-img-box img {
